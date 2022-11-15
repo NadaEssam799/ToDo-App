@@ -1,29 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>TodoList</title>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Todo-List</h1>
-            <form action="" id="task-form">
-                <input type="text" id="task-input" placeholder="What are your tasks for today?">
-                <input type="submit" id="task-submit" value="Add">
-    
-            </form>
-        </header>
-            <section class="task-list">  
-               <div id="tasks">
-                </div>
-            </section>
-    </div>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
 
-    <script src="script.js"></script>
-</body>
+
+    <script src="index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="screen-1">
+      <form id="form">
+        <div class="email">
+          <label for="email">Email Address</label>
+          <div class="sec-2">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input
+              required
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Username@gmail.com"
+            />
+          </div>
+        </div>
+        <button id="login" class="login">Login</button>
+      </form>
+    </div>
+
+
+    
+    <!-- partial -->
+  </body>
 </html>

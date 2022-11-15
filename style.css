@@ -1,128 +1,71 @@
-
-:root{
-    --lightgreen : #00c78a;
-    --orange: #ff9c27;
-    --bg:#e6468e;
-    --primarytext: #f2e8cf;
-}
-*{
-    box-sizing: border-box;
-    margin: 0;
+* {
+  font-family: "Poppins";
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background: #f2e8cf;
-}
-header{
-    padding: 20px 15px;
-    max-width: 700px;
-    width: 100%;
-    margin: 0 auto;
-}
-header h1{
-    font-size: 2.5rem;
-    font-weight: 400;
-    color: var(--primarytext);
-    margin-bottom: 1.5rem;
-}
-#task-form{
-    display: flex;
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2e8cf;
+  height: 100vh;
 }
 
-input,button{
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
+.screen-1 {
+  background: #e6468e;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0 0 2em #e6e9f9;
+  gap: 2em;
 }
 
-#task-input{
-    flex: 1 1 0%;
-    background-color: var(--bg);
-    padding: 15px;
-    border: 1px solid var(--primarytext);
-    border-radius: 15px;
-    margin-right: 15px;
-    color: var(--primarytext);
-    font-size: 1.25rem;
+.screen-1 .email {
+  background: white;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
 }
-#task-input::placeholder{
-    color: var(--primarytext);
+.screen-1 .email input {
+  outline: none;
+  border: none;
 }
-#task-submit{
-    color: var(--primarytext);
-    font-size: 1.25rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.4s;
-    border: 1px solid ;
-    border-radius: 15px;
-    padding: 15px;
+.screen-1 .email input::-moz-placeholder {
+  color: black;
+  font-size: 0.9em;
 }
-
-#task-submit:hover{
-    opacity: 0.8;
+.screen-1 .email input:-ms-input-placeholder {
+  color: black;
+  font-size: 0.9em;
 }
-
-#task-submit:active{
-    opacity: 0.6;
+.screen-1 .email input::placeholder {
+  color: black;
+  font-size: 0.9em;
 }
-.container{
-    background-color: #c73074;
-    flex: 0% 1 0%;
-    max-width: 750px;
-    width: 100%;
-    margin: 2rem auto;
-    border-radius: 15px;
+.screen-1 .email ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -0.2em;
 }
 
-.task-list{
-    padding: 15px;
+.screen-1 .login {
+  padding: 1em;
+  background: #3e4684;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 13px;
 }
 
-#tasks .task{
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--bg);
-    border: 1px solid #f2e8cf;
-    padding: 15px;
-    border-radius: 15px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    width: 80%;
-    margin-left: 30px;
+button {
+  cursor: pointer;
 }
-
-#tasks .task .content .text{
-    color: var(--primarytext);
-    font-size: 1.13rem;
-    transition: 0.4s;
-}
-
-#tasks .task .actions{
-    display: flex;
-    margin: 0 -0.5rem;
-}
-
-.task .actions button{
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 800;
-    margin: 0 0.5rem;
-    text-transform: uppercase;
-    transition: 0.4s;
-}
-.task .actions button:hover{
-    opacity: 0.8;
-}
-
-.task .actions .Edit{
-    color: #f2e8cf;
-}
-.task .actions .Delete{
-    color:#f2e8cf;
-}
-
